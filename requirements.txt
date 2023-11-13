@@ -1,0 +1,13 @@
+pandas 
+numpy
+matplotlib
+
+torch
+torchmetrics
+torchvision
+tqdm
+torchsummary
+
+regex  
+nltk
+scikit-learn
