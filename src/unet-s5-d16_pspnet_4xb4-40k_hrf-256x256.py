@@ -321,7 +321,7 @@ val_dataloader = dict(
     sampler=dict(shuffle=False, type='DefaultSampler'))
 val_evaluator = dict(
     iou_metrics=[
-        'mDice',
+        'mDice','mIoU','mFscore'
     ], type='IoUMetric')
 vis_backends = [
     dict(type='LocalVisBackend'),
