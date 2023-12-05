@@ -22,8 +22,8 @@ Basic Requirement
 | unet_try_3 | 200 | (256, 256) |unet-s5-d16_deeplabv3_4xb4-40k_hrf-256x256| 99.42 | 82.68 | 86.94 |
 | unet_try_4 | 200 | (256, 256) |unet-s5-d16_fcn_4xb4-40k_hrf-256x256| 99.49 | 80.75 | 77.68 |
 | unet_try_crop | 200 | (224, 224) |**unet-s5-d16_pspnet_4xb4-40k_hrf-256x256**| 99.45 | 82.55 | 84.97 |
-| unet_try_crop | 200 | (192, 192) |**unet-s5-d16_pspnet_4xb4-40k_hrf-256x256**| 99.15 | 75.81 | 80.89 |
-| unet_try_crop | 200 | **(288, 288)** |**unet-s5-d16_pspnet_4xb4-40k_hrf-256x256**| **99.51** | **84.05** | **85.53** |
+| unet_try_crop_2 | 200 | (192, 192) |**unet-s5-d16_pspnet_4xb4-40k_hrf-256x256**| 99.15 | 75.81 | 80.89 |
+| unet_try_crop_3 | 200 | **(288, 288)** |**unet-s5-d16_pspnet_4xb4-40k_hrf-256x256**| **99.51** | **84.05** | **85.53** |
 
 
 
