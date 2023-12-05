@@ -14,12 +14,16 @@ Basic Requirement
 
 ● Based on your observation above, choose the appropriate model to be fine-tuned specifically toward achieving better segmentation performance. Unlike typical classification where the main metrics are accuracy, recall, precision etc. Segmentation outcomes are usually evaluated by metrics like intersection-of-union (IoU) score etc. to provide a holistic view of how accurate the pixel-wise classification would be. Refer to documentation and choose a few metrics that you target to improve during fine-tuning.
 
-| Filename | N_iteration | Model Name | aAcc |mDice |mAcc |
-| :---         |     :---:      |:---           |     :---:      |     :---:      |     :---:      |
-| unet_try   | 200 |unet-s5-d16_pspnet_4xb4-40k_hrf-256x256   | 99.47 | 83.22 | 85.86 |
-| unet_try_1 | 200 |unet-s5-d16_pspnet_4xb4-40k_stare-128x128 | 99.30 | 80.06 | 84.47 |
-| unet_try_2 | 200 |unet-s5-d16_pspnet_4xb4-40k_drive-64x64   | 99.26 | 77.78 | 81.16 |
-| unet_try_3 | 200 |unet-s5-d16_deeplabv3_4xb4-40k_hrf-256x256| 99.42 | 82.68 | 86.94 |
+| Filename | N_iteration |  Crop Size | Model Name | aAcc |mDice |mAcc |
+| :---         |     :---:      |     :---:      |:---           |     :---:      |     :---:      |     :---:      |
+| unet_try   | 200 | (256, 256) |**unet-s5-d16_pspnet_4xb4-40k_hrf-256x256**   | 99.47 | 83.22 | 85.86 |
+| unet_try_1 | 200 | (256, 256) |unet-s5-d16_pspnet_4xb4-40k_stare-128x128 | 99.30 | 80.06 | 84.47 |
+| unet_try_2 | 200 | (256, 256) |unet-s5-d16_pspnet_4xb4-40k_drive-64x64   | 99.26 | 77.78 | 81.16 |
+| unet_try_3 | 200 | (256, 256) |unet-s5-d16_deeplabv3_4xb4-40k_hrf-256x256| 99.42 | 82.68 | 86.94 |
+| unet_try_4 | 200 | (256, 256) |unet-s5-d16_fcn_4xb4-40k_hrf-256x256| 99.49 | 80.75 | 77.68 |
+| unet_try_crop | 200 | (224, 224) |**unet-s5-d16_pspnet_4xb4-40k_hrf-256x256**| 99.45 | 82.55 | 84.97 |
+| unet_try_crop | 200 | (192, 192) |**unet-s5-d16_pspnet_4xb4-40k_hrf-256x256**| 99.15 | 75.81 | 80.89 |
+| unet_try_crop | 200 | **(288, 288)** |**unet-s5-d16_pspnet_4xb4-40k_hrf-256x256**| **99.51** | **84.05** | **85.53** |
 
 
 
