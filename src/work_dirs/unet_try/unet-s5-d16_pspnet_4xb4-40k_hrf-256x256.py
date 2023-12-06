@@ -58,8 +58,7 @@ model = dict(
         dropout_ratio=0.1,
         in_channels=128,
         in_index=3,
-        loss_decode=dict(
-            loss_weight=0.4, type='CrossEntropyLoss', use_sigmoid=False),
+        loss_decode=dict(loss_weight=1.0, type='FocalLoss'),
         norm_cfg=dict(requires_grad=True, type='BN'),
         num_classes=2,
         num_convs=1,
@@ -139,8 +138,7 @@ model = dict(
         dropout_ratio=0.1,
         in_channels=64,
         in_index=4,
-        loss_decode=dict(
-            loss_weight=1.0, type='CrossEntropyLoss', use_sigmoid=False),
+        loss_decode=dict(loss_weight=1.0, type='FocalLoss'),
         norm_cfg=dict(requires_grad=True, type='BN'),
         num_classes=2,
         pool_scales=(
@@ -212,7 +210,7 @@ test_pipeline = [
     dict(type='LoadAnnotations'),
     dict(type='PackSegInputs'),
 ]
-train_cfg = dict(max_iters=200, type='IterBasedTrainLoop', val_interval=200)
+train_cfg = dict(max_iters=400, type='IterBasedTrainLoop', val_interval=200)
 train_dataloader = dict(
     batch_size=2,
     dataset=dict(
@@ -337,6 +335,8 @@ val_dataloader = dict(
 val_evaluator = dict(
     iou_metrics=[
         'mDice',
+        'mIoU',
+        'mFscore',
     ], type='IoUMetric')
 vis_backends = [
     dict(type='LocalVisBackend'),
