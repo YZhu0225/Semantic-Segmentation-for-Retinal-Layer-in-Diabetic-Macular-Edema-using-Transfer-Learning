@@ -161,3 +161,7 @@ cython_debug/
 
 *.pth
 *.npy
+src/fine_tune_unet_1.ipynb
+src/fine_tune_unet_2.ipynb
+src/fine_tune_unet_3.ipynb
+src/fine_tune_unet_4.ipynb
