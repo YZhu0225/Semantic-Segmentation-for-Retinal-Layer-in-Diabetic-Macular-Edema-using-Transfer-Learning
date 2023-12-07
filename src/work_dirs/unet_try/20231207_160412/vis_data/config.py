@@ -58,7 +58,7 @@ model = dict(
         dropout_ratio=0.1,
         in_channels=128,
         in_index=3,
-        loss_decode=dict(loss_weight=1.0, type='DiceLoss', use_sigmoid=False),
+        loss_decode=dict(loss_weight=1.0, type='FocalLoss'),
         norm_cfg=dict(requires_grad=True, type='BN'),
         num_classes=2,
         num_convs=1,
@@ -138,7 +138,7 @@ model = dict(
         dropout_ratio=0.1,
         in_channels=64,
         in_index=4,
-        loss_decode=dict(loss_weight=1.0, type='DiceLoss', use_sigmoid=False),
+        loss_decode=dict(loss_weight=1.0, type='FocalLoss'),
         norm_cfg=dict(requires_grad=True, type='BN'),
         num_classes=2,
         pool_scales=(
