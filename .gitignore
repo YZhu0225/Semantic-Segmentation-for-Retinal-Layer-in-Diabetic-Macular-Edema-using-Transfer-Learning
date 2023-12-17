@@ -161,10 +161,10 @@ cython_debug/
 
 *.pth
 *.npy
-data/annotation/
+
 data/annotation_2d/
 data/annotation_2d_binary/
-data/img_for_inference/
+
 data/img_for_inference_2d/
 data/img_for_inference_binary/
 
