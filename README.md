@@ -43,7 +43,7 @@ To improve our model's performance, we systematically tuned training parameters,
 
 ## How to reproduce
 
-1. Copy the repo: ```git clone ```
+1. Copy the repo: ```git clone https://github.com/nogibjj/yj_xq_661_final_project.git ```
 2. Setup environment following mm-segmentation’s documentation: https://mmsegmentation.readthedocs.io/en/latest/get_started.html
 3. Preprocess the data: click "Run All" on the [src/0_prepare_data.ipynb](https://github.com/nogibjj/yj_xq_661_final_project/blob/main/src/0_prepare_data.ipynb) Jupyter Notebook.
 4. Make initial inference without fine tuning: click "Run All" on the [src/1_inferencer.ipynb](https://github.com/nogibjj/yj_xq_661_final_project/blob/main/src/1_inferencer.ipynb) Jupyter Notebook.
