@@ -3,6 +3,9 @@ Adapting Semantic Segmentation Models to Medical Imaging for Retinal Layer Analy
 
 Team Member: Xiaoquan Liu, Yuanjing Zhu
 
+![image](https://github.com/nogibjj/yj_xq_661_final_project/assets/110933007/f3d237f7-408d-4d5d-92e1-218d3d5195a7)
+
+
 ## Project Overview
 
 This project focuses on optimizing pre-trained semantic segmentation models for fluid segmentation in optical coherence tomography (OCT) images, specifically focusing on diabetic macular edema (DME). Utilizing a public OCT dataset, we first demonstrate that the improvements in segmentation accuracy are highly task-dependent in transfer learning. Initial results without fine-tuning show low mean intersection over Union(mIoU) scores, indicating the need for further model adjustments. Then, we explore various fine-tuning techniques and employ data augmentation strategies and loss functions to enhance model performance. The results demonstrate significant improvements in segmentation accuracy, as indicated by substantial increases in both mIoU and mean Dice Coefficient (mDice) scores. These experiments underscore the potential of domain-adapted network tuning to achieve high accuracy and reliability in medical image segmentation, even with limited representative training data.
